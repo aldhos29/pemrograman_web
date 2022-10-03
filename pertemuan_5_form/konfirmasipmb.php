@@ -78,6 +78,11 @@
                         <h3>Selamat! Anda Telah Berhasil Mendaftar</h3>
                         <p>Silahkan Tunggu Kabar Dari Kami</p>
                         
+                        <div class="progress mt-5">
+                            <div class="progress-bar bg-success" style="width:100%">
+                                Selesai
+                            </div>
+                        </div>
                         
                         <h5 class="mt-5 bg-success p-2 text-white">Data yang Terdaftar</h5>
                         <table class="table table-hover">

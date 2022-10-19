@@ -1,0 +1,173 @@
+@font-face {
+	font-family: Poppins; src: url(../fonts/Poppins-Light.otf);
+  }
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :7rem;
+    padding: 0 2rem;
+}
+
+.img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login-content{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.img img{
+	width: 500px;
+}
+
+form{
+	width: 360px;
+}
+
+.login-content img{
+    height: 100px;
+}
+
+.login-content h2{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.row{
+    margin-bottom: 0;
+}
+
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0; 
+}
+.blinking {
+	animation: blinker 0.5s linear infinite;
+	padding-top:120px;
+    margin-left: -60px;
+    opacity: 0.8;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+@media screen and (max-width: 1050px){
+	.container{
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	form{
+		width: 290px;
+	}
+
+	.login-content h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+	}
+
+	.img img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+
+	.img{
+		display: none;
+	}
+
+	.wave{
+		display: none;
+	}
+
+	.login-content{
+		justify-content: center;
+	}
+}
+
+::selection{
+    background-color: rgb(22, 21, 21);
+    color: #fff;
+}
+
+.buttonawal{
+	margin-top: 30px;
+}
+
+#Button {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width: 250px;
+	height: 35px;
+	text-decoration: none;
+	border-radius: 1px;
+	text-align: center;
+	padding: 7px;
+	background: none;
+	border: 2px solid #DD2826;
+	color: #DD2826;
+	text-transform: uppercase;
+}
+
+#Button:hover {
+	border-radius: 3px;
+	cursor: pointer;
+	background-color: #DD2826;
+	color: #FFF;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	-ms-transition: all .2s;
+	transition: all .2s;
+}
+
+.active {
+	animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  
